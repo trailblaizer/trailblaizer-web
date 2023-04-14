@@ -564,7 +564,8 @@ export default function V(props: any) {
 
   return (
     <>
-      <div className='px-24 py-4 text-6xl font-light'>
+      <div className='branding'>
+        <h1>Visualizer</h1>
         <h1>Trailblaizer</h1>
       </div>
       <div className='flex flex-col items-start justify-start' ref={dom}>

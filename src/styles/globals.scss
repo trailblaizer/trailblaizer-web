@@ -11,8 +11,8 @@ html {
 
 body {
   font-size: 1.6em;
-  @apply bg-[#0F0F0F] text-neutral-400;
-  @apply bg-neutral-900;
+  @apply bg-[#000000] text-neutral-400;
+  // @apply bg-neutral-900;
 }
 
 .value-block {
@@ -24,15 +24,17 @@ body {
 }
 
 .card {
-  @apply bg-[#101010];
+  @apply bg-[#030303];
   font-family: 'Roboto Mono';
 
-  > h1 {
-    @apply font-medium text-neutral-400;
-    font-family: Roboto;
+  > div {
+    > h1 {
+      @apply font-bold text-neutral-500 text-lg;
+      font-family: Roboto;
+    }
   }
 
-  box-shadow: -8px -8px 16px #141414, 8px 8px 16px #000;
+  box-shadow: -4px -4px 8px #060606, 4px 4px 8px #000;
 
   .section-title {
     @apply text-base text-[#999999] relative mb-4 font-normal;
@@ -45,7 +47,7 @@ body {
 }
 
 .multi-value {
-  @apply bg-[#0f0f0f] border border-[#141414] rounded-lg  items-center flex py-2 px-4 h-[40px];
+  @apply bg-[#060606] border border-[#101010] rounded-lg  items-center flex py-2 px-4 h-[40px];
 
   > label {
     @apply -rotate-90 text-sm font-normal h-fit text-center -ml-4;
@@ -66,7 +68,7 @@ body {
 }
 
 .simple-value {
-  @apply bg-[#0f0f0f] border border-[#141414] flex py-2 px-4 mt-2 h-[40px] items-center;
+  @apply bg-[#060606] border border-[#101010] flex py-2 px-4 mt-2 h-[40px] items-center;
 
   > span:first-child {
     @apply flex-1 px-4 text-sm text-right text-neutral-600 font-bold;
@@ -79,7 +81,7 @@ body {
 }
 
 .light-indicator {
-  @apply bg-[#0f0f0f] border border-[#141414] flex py-2 px-4 h-[40px] items-center;
+  @apply bg-[#060606] border border-[#101010] flex py-2 px-4 h-[40px] items-center;
   @apply text-sm;
 
   > span:first-child {
@@ -108,15 +110,16 @@ body {
 }
 
 .branding {
-  @apply px-24 pt-12 pb-4;
+  @apply px-24 pt-12 pb-0;
   font-family: 'Roboto Condensed';
 
   > h1:first-child {
-    @apply text-[#70448A] text-[3rem] font-bold;
+    @apply text-[#70448A] text-[4rem] font-bold;
+    text-shadow: 1px 1px 2px #111, -1px -1px 0px rgba(255, 255, 255, 0.05);
   }
 
   > h1:last-child {
-    @apply text-[#191919] text-[8rem] leading-none relative -top-8 m-0 font-light;
-    text-shadow: 2px 2px 8px #111111, -1px -1px 2px rgba(255, 255, 255, 0.05);
+    @apply text-[#202020] text-[8rem] leading-none relative m-0 font-light;
+    text-shadow: 1px 1px 2px #111, -1px -1px 0px rgba(255, 255, 255, 0.05);
   }
 }

@@ -95,11 +95,11 @@ export default function Home() {
       </Head>
 
       <div className='branding'>
+        <h1>Configuration</h1>
         <h1>Trailblaizer</h1>
-        <h1>Configurator</h1>
       </div>
 
-      <div className='p-24'>
+      <div className='px-24'>
         <div className='flex mx-auto mt-24'>
           <div className='mr-8'>
             {isSerialPortIMU(lhImu) ? (

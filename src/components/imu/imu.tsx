@@ -31,18 +31,18 @@ export function Imu({
         className='inline-block p-8 rounded-2xl card text-neutral-600'
         {...args}
       >
-        <div className='flex items-start justify-between '>
-          <h1 className='mb-4 text-2xl text-neutral-300'>{name}</h1>
+        <div className='flex items-center justify-between '>
+          <h1 className='mr-2 text-2xl'>{name}</h1>
           <div className='flex'>
             {isDisconnected ? (
               <div className='!h-auto rounded-lg light-indicator'>
                 <span className='red'></span>
-                <span>Disconnected ({status}) </span>
+                <span>Disconnected</span>
               </div>
             ) : (
               <div className='!h-auto rounded-lg light-indicator'>
                 <span className='green'></span>
-                <span>Connected ({status})</span>
+                <span>Connected</span>
               </div>
             )}
 
